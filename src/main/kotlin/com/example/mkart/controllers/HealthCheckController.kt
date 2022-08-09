@@ -1,0 +1,13 @@
+package com.example.mkart.controllers
+
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RestController
+
+
+@RestController
+class HealthCheckController {
+    @GetMapping("/health")
+    fun index(): String? {
+        return "Service is up and running"
+    }
+}
